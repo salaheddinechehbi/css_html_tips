@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background: #262626;
+        }
+
+        .border_div{
+            width: 300px;
+            height: 300px;
+            border: 5px solid #e67e22;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            cursor: pointer;
+            border-radius: 50%;
+            transition: 0.5s;
+        }
+        .border_div:hover{
+            border-radius: 0;
+        }
+        .border_div::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #425568;
+            z-index: -1;
+            transform: rotate(45deg);
+            border-radius: 8px;
+        }
+
+        p{
+            color: white;
+            line-height: 1.2em;
+            font-size: 2em;
+            text-align: center;
+            position: absolute;
+            background: #425568;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 20px;
+            transition: 0.5s;
+        }
+
+        .border_div:hover p{
+            box-shadow: 0 0 50px rgba(0,0,0,0.2);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="border_div">
+        <p>CSS Tips For Beautiful Design</p>
+    </div>
+
+
+</body>
+</html>
