@@ -1,0 +1,661 @@
+section {
+    padding: 15px;
+}
+
+/********************************************************************/
+
+/* 1.BACK TOP TOP DEMO OPENCART
+----------------------------------------------------- */
+
+.back-to-top {
+    cursor: pointer;
+    background-color: #777;
+    color: #fff;
+    width: 45px;
+    bottom: 50px;
+    right: 20px;
+    padding: 5px 0;
+    overflow: hidden;
+    z-index: 40;
+    position: fixed;
+    display: inline;
+    text-align: center;
+    border-radius: 3px;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.back-to-top.hidden-top {
+    bottom: -100px;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+.back-to-top:hover {
+    background-color: #F4A137;
+}
+
+.back-to-top i {
+    font-size: 32px;
+    display: block;
+    line-height: 18px;
+}
+
+.back-to-top span {
+    display: block;
+    line-height: 18px;
+}
+
+@media (max-width: 1199px) {
+    .back-to-top {
+        right: 20px;
+    }
+}
+
+/*==========================BLOCK CART ======================*/
+
+.shopping_cart {
+    padding: 0;
+}
+
+.shopping_cart .btn-group {
+    display: block;
+    z-index: 5;
+}
+
+.shopping_cart a.top_cart {
+    display: block;
+    position: relative;
+    box-shadow: none !important;
+    text-decoration: none !important;
+}
+
+.shopping_cart a.top_cart .shopcart .title {
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.shopping_cart a.top_cart .shopcart .text-shopping-cart {
+    color: #999;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+.shopping_cart a.top_cart .handle {
+    background: url("../images/icons/icon_minicart.png") no-repeat 8px 8px;
+    background-color: #F4A137;
+    width: 36px;
+    height: 34px;
+    margin: 5px 10px;
+}
+
+.shopping_cart .shoppingcart-box {
+    padding: 15px;
+    border-radius: 0;
+    border-top: 3px solid #F4A137;
+    min-width: 300px;
+}
+
+@media (min-width: 1200px) {
+    .shopping_cart .shoppingcart-box:before {
+        content: "";
+        height: 1px;
+        width: 1px;
+        border-style: solid;
+        border-bottom: 10px solid #F4A137;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: transparent;
+        position: absolute;
+        top: -10px;
+        right: 129px;
+    }
+}
+
+.shopping_cart .shoppingcart-box .added_items {
+    margin-bottom: 10px;
+}
+
+.shopping_cart .shoppingcart-box .table-striped>tbody>tr:nth-of-type(odd) {
+    background: #fff;
+}
+
+.shopping_cart .shoppingcart-box .table-striped a {
+    color: #666;
+    font-weight: bold;
+}
+
+.shopping_cart .shoppingcart-box .table-striped a.fa-edit {
+    display: none;
+}
+
+.shopping_cart .shoppingcart-box .table-striped a:hover {
+    color: #F4A137;
+}
+
+.shopping_cart .shoppingcart-box .table-striped a.fa-delete {
+    width: 20px;
+    height: 20px;
+    background: #d6d6d6;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 19px;
+    color: #000;
+}
+
+.shopping_cart .shoppingcart-box .table-striped a.fa-delete:hover {
+    background: #F4A137;
+    color: #fff;
+    text-decoration: none;
+}
+
+.shopping_cart .shoppingcart-box a.btn {
+    color: #fff;
+    background: #444;
+    border-color: #444;
+}
+
+.shopping_cart .shoppingcart-box a.btn i {
+    margin-right: 5px;
+}
+
+.shopping_cart .shoppingcart-box a.btn:hover {
+    border: 1px solid #F4A137;
+    background: #F4A137;
+}
+
+.shopping_cart .table-bordered {
+    border-left: 0;
+    border-right: 0;
+}
+
+.shopping_cart .table>tbody>tr {
+    margin: 10px 0;
+}
+
+.shopping_cart .table>tbody>tr:first-child>td {
+    border-top: 0;
+}
+
+.shopping_cart .table>tbody>tr>td, .shopping_cart .table>tbody>tr>th, .shopping_cart .table>tfoot>tr>td, .shopping_cart .table>tfoot>tr>th, .shopping_cart .table>thead>tr>td, .shopping_cart .table>thead>tr>th {
+    vertical-align: middle;
+}
+
+.shopping_cart .table-bordered>tbody>tr>td, .shopping_cart .table-bordered>tbody>tr>th, .shopping_cart .table-bordered>tfoot>tr>td, .shopping_cart .table-bordered>tfoot>tr>th, .shopping_cart .table-bordered>thead>tr>td, .shopping_cart .table-bordered>thead>tr>th {
+    border: 0;
+}
+
+.left-content-product .content-product-right .box-info-product .cart {
+    float: left;
+    margin-right: 10px;
+}
+
+.left-content-product .content-product-right .box-info-product .cart a {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.left-content-product .content-product-right .box-info-product .cart a i {
+    margin-right: 5px;
+}
+
+.left-content-product .content-product-right .box-info-product .cart input {
+    background: #F4A137;
+    border-radius: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 12px 16px;
+}
+
+.left-content-product .content-product-right .box-info-product .cart input:hover {
+    background: #444;
+}
+
+/*********************************** Newsletter ***************************/
+
+.row.news {
+    justify-content: center;
+}
+
+.news-letter .newsletter {
+    background: url("../images/newsletter-bg.jpg") no-repeat;
+    overflow: hidden;
+    padding: 33px 20px;
+    background-size: cover;
+    color: #fff;
+}
+
+.news-letter .newsletter h2 {
+    font-size: 216.6%;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 100%;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.news-letter .newsletter .input-box {
+    height: 40px;
+    border: none;
+    width: 100%;
+}
+
+.news-letter .newsletter .input-box input {
+    height: 40px;
+    border: none;
+    width: 100%;
+    vertical-align: top;
+    padding: 5px 15px;
+}
+
+.news-letter .newsletter .form-group {
+    position: relative;
+    z-index: 5;
+    margin: 0;
+}
+
+.news-letter .newsletter .subcribe button {
+    width: 49px;
+    min-width: 49px;
+    height: 40px;
+    background: url("../images/newsletter-btn.png") no-repeat center center;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    text-indent: -999em;
+    border: none;
+    background-color: #F4A137;
+}
+
+.news-letter .newsletter .subcribe span {
+    display: none;
+}
+
+/******************************* Banners **********************/
+
+/* @group Banners hover effect */
+.modcontent{
+    justify-content: space-between;
+}
+.banners1>div img {
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.banners1>div img:hover {
+    opacity: 0.8;
+} 
+
+.banners2>div a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.banners2>div a:hover:before, .banners2>div a:hover:after {
+    left: 0;
+    opacity: 1;
+}
+
+.banners2>div a:before,.banners2>div a:after {
+    background-color: rgba(255, 255, 255, 0.4);
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    content: "";
+    z-index: 1;
+} 
+
+/***** Round effect ********/
+.banners3>div a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.banners3>div a:hover:before, .banners3>div a:hover:after {
+    border: 0 solid rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.banners3>div a:before,  .banners3>div a:after {
+    border: 50px solid transparent;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    content: "";
+    opacity: 1;
+    filter: alpha(opacity=100);
+    width: 100px;
+    height: 100px;
+    -webkit-transform: scale(7);
+    -moz-transform: scale(7);
+    -ms-transform: scale(7);
+    -o-transform: scale(7);
+    transform: scale(7);
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    visibility: visible;
+    z-index: 1;
+} 
+
+.banners4>div a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.banners4>div a:hover:before, .banners4>div a:hover:after {
+    opacity: 1;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 4, 1);
+    -moz-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 4, 1);
+    -ms-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 4, 1);
+    -o-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 4, 1);
+    transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 4, 1);
+}
+
+.banners4>div a:before, .banners4>div a:after {
+    border-bottom: 50px solid rgba(0, 0, 0, 0.2);
+    border-top: 50px solid rgba(0, 0, 0, 0.2);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    top: 0;
+    transform-origin: 50% 50% 0;
+    width: 100%;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+    -moz-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+    -ms-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+    -o-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+    transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+    -webkit-transition: opacity 0.4s ease 0s, -webkit-transform 0.6s ease 0s;
+    -moz-transition: opacity 0.4s ease 0s, -moz-transform 0.6s ease 0s;
+    transition: opacity 0.4s ease 0s, transform 0.6s ease 0s;
+    visibility: visible;
+    z-index: 1;
+} 
+
+.banners5>div a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.banners5>div a:hover:before, .banners5>div a:hover:after {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    border: 0 double rgba(255, 255, 255, 0.7);
+    visibility: hidden;
+}
+
+.banners5>div a:before,  .banners5>div a:after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    border: 200px double transparent;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    visibility: visible;
+    -webkit-transition: all 0.6s cubic-bezier(0.94, 0.85, 0.1, 0.62) 0s;
+    -moz-transition: all 0.6s cubic-bezier(0.94, 0.85, 0.1, 0.62) 0s;
+    transition: all 0.6s cubic-bezier(0.94, 0.85, 0.1, 0.62) 0s;
+}
+
+.banners6>div a {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+}
+
+.banners6>div a img {
+    backface-visibility: hidden;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition: opacity 1s ease 0s, transform 1s ease 0s;
+    -o-transition: opacity 1s ease 0s, transform 1s ease 0s;
+    transition: opacity 1s ease 0s, transform 1s ease 0s;
+}
+
+.banners6>div a:hover img {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+.banners7>div a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.banners7>div a:before {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    width: 0;
+    top: 0;
+    left: 50%;
+    content: "";
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.banners7>div a:hover:before {
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.banners8>div a {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    vertical-align: top;
+}
+
+.banners8>div a:before,.banners8>div a:after {
+    bottom: 20px;
+    content: "";
+    left: 20px;
+    opacity: 0;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    -webkit-transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+    -o-transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+    transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+    z-index: 1;
+}
+
+.banners8>div a:before {
+    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    -o-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.banners8>div a:after {
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    -webkit-transform: scale(1, 0);
+    -ms-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    transform: scale(1, 0);
+}
+
+.banners8>div img {
+    opacity: 1;
+    width: 100%;
+    filter: alpha(opacity=100);
+    -webkit-transition: opacity 0.35s ease 0s;
+    -o-transition: opacity 0.35s ease 0s;
+    transition: opacity 0.35s ease 0s;
+}
+
+.banners8>div a:hover:before,.banners8>div a:hover:after {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.banners8>div a:hover img {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.banners9>div a {
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+
+.banners9>div a:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    content: '';
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.banners9>div a:hover:before {
+    opacity: 1;
+}
+
+.banners9>div a img {
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: perspective(1000px) translate3d(0, 0, 0);
+    transform: perspective(1000px) translate3d(0, 0, 0);
+}
+
+.banners9>div a:hover img {
+    -webkit-transform: perspective(1000px) translate3d(0, 0, 21px);
+    transform: perspective(1000px) translate3d(0, 0, 21px);
+}
+
+.banners10>div a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.banners10>div a:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 75%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 75%);
+    content: '';
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.banners10>div a:hover:before {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.banners11>div a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.banners11>div a:hover:before,.banners11>div a:hover:after {
+    width: 100%;
+    height: 100%;
+}
+
+.banners11>div a:before,.banners11>div a:after {
+    background-color: rgba(0, 0, 0, 0.15);
+    content: "";
+    height: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    width: 0;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.banners11>div a:after {
+    left: auto;
+    right: 0;
+    bottom: 0;
+}
+
+.banners12>div img {
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.banners12>div img:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Borders</title>
+    <style>
+        body{
+            position: absolute;
+            display: flex;
+            top: 0;
+            bottom: 0;left: 0;right: 0;
+            background-color: darkslategrey;
+        }
+        .div1{
+            position: relative;
+            width: 50%;
+            height: 40%;
+            padding: 15px;
+            margin: auto;
+            border: 3px solid steelblue;
+            box-shadow: 0px 0px 20px 2px #000;
+        }
+        .div2{
+            padding: 15px;
+            height: auto;
+            border: 3px dotted darkturquoise;
+            box-shadow: 0px 0px 20px 2px steelblue;
+        }
+        .div3{
+            padding: 15px;
+            height: auto;
+            border: 3px ridge darksalmon;
+            box-shadow: 0px 0px 20px 2px  darkturquoise;
+        }
+        .div4{
+            padding: 15px;
+            height: auto;
+            border: 3px groove rgb(120, 233, 176);
+            box-shadow: 0px 0px 20px 2px darksalmon;
+        }
+        .div5{
+            padding: 15px;
+            height: auto;
+            text-align: center;
+            border: 3px dashed rgb(219, 231, 105);
+            box-shadow: 0px 0px 20px 2px  rgb(120, 233, 176);
+        }
+        .div5 h1{
+            position: relative;
+            text-transform: uppercase;
+        }
+        .div5 h1::before{
+            position: absolute;
+            content: '';
+            background: #000;
+            width: 20px;
+            height: 2px;
+            top: 50%;
+            left: 0;
+        }
+        .div5 h1::after{
+            position: absolute;
+            content: '';
+            background: #000;
+            width: 20px;
+            height: 2px;
+            top: 50%;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="div1">
+
+        <div class="div2">
+
+            <div class="div3">
+
+                <div class="div4">
+
+                    <div class="div5">
+                        <h1>Awsome Borders</h1>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
