@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #ffffff;
+        }
+
+        h2{
+            position: relative;
+            font-size: 4em;
+            color: rgb(0, 0, 0);
+            width: 80%;
+        }
+
+        h2 span{
+            color: aqua;
+            display: none;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2 id="text">Be 
+        <span class="txt" style="display: initial;">Bold</span>
+        <span class="txt">Creative</span>
+        <span class="txt">Amazing</span>
+        <span class="txt">Unique</span>
+        <span class="txt">Cool</span>
+        <span class="txt">Awesome</span>
+    </h2>
+
+    <script>
+        var text = document.getElementById('text');
+        var word = text.getElementsByTagName('span');
+        var i = 0; 
+        function rotator(){
+            // With the element initially hidden, we can show it slowly:
+            //$( ".txt" ).fadeIn( "slow", function() {
+                // Animation complete
+                word[i].style.display = 'none';
+                i = (i + 1) % word.length;
+                word[i].style.display = 'initial';
+            //});
+        }
+        
+        setInterval(rotator, 1500);
+        
+        
+    </script>
+</body>
+</html>
